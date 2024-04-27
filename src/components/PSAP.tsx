@@ -1,4 +1,3 @@
-"use client";
 import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -33,7 +32,7 @@ const PSAP: React.FC = () => {
         .to(imagesRef.current[1], { y: -200 }, 0)
         .to(imagesRef.current[2], { y: 200 }, 0)
         .to(imagesRef.current[3], { y: 220 }, 0);
-      lettersRef.current.forEach((letter, i) => {
+      lettersRef.current.forEach((letter) => {
         tl.to(
           letter,
           {
@@ -68,7 +67,6 @@ const PSAP: React.FC = () => {
           return (
             <div className="position" key={`i_${i}`}>
               <div
-                key={`i_${i}`}
                 ref={(el) => (imagesRef.current[i] = el)}
                 className="imageContainer"
               >

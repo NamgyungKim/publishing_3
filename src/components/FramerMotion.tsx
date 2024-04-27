@@ -1,4 +1,3 @@
-"use client";
 import React, { useRef } from "react";
 import bgImage from "../assets/images/framerMotion/sld2-bg.jpg";
 import astronaut from "../assets/images/framerMotion/slider3_05.png";
